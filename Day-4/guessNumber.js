@@ -72,3 +72,4 @@ resetButton.addEventListener('click',function(e){
   randomNumber = Math.floor(Math.random() * 100 + 1);
   resetButton.style.display = 'none';
 })
+
