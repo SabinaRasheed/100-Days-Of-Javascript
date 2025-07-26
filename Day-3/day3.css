@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1e1e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .container {
+    text-align: center;
+    color: #ffffff;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: #ffcc70;
+  }
+
+  #clock {
+    font-size: 64px;
+    font-weight: bold;
+    padding: 20px 40px;
+    background-color: #333;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 204, 112, 0.4);
+    letter-spacing: 3px;
+  }
+
