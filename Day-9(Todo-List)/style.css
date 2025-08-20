@@ -25,6 +25,7 @@
   align-items: center;
   border-radius: 50%;
   margin: 15px;
+  cursor: pointer;
 }
 
 .tabs {
@@ -106,4 +107,36 @@
 
 .delete-btn:hover {
   color: #7C3AED;
+}
+
+.add-bar {
+  gap: 8px;
+  display: none;
+  width: 100%;
+  margin: 12px 0;
+  padding: 10px;
+  border: 1px solid #E5E7EB;
+  border-radius: 10px;
+  background: #FFFFFF;
+}
+
+.add-bar input {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+}
+
+.add-bar button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background: #7C3AED;
+  color: #fff;
+  cursor: pointer;
+}
+
+.add-bar button#cancelAddBtn {
+  background: #F3F4F6;
+  color: #111827;
 }

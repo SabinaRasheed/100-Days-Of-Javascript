@@ -15,33 +15,50 @@
   </head>
   <body>
     <div class="container">
-      <div class="icons">
+      <h1 class="heading">To Do List</h1>
+
+      <!-- Add new task button -->
+      <div class="icons" id="add-todo">
         <i
           style="color: white; font-size: larger; font-weight: 900"
           class="fa-solid fa-plus"
         ></i>
       </div>
+
+      <div class="add-bar" id="addBar">
+        <input type="text" id="taskInput" placeholder="Add a task..." />
+        <button id="saveTaskBtn">Add</button>
+        <button id="cancelAddBtn">Cancel</button>
+      </div>
+
       <div class="tabs">
         <div class="tab">Active</div>
         <div class="tab">Completed</div>
         <div class="tab active">All todos</div>
       </div>
+
+      <!-- Todo list -->
       <ul class="todo-list">
         <li class="todo-item">
           <div class="left">
             <input type="checkbox" class="check-task" />
             <span class="task-text">Learn JavaScript</span>
           </div>
-          <button class="delete-btn"><i class="fa-solid fa-xmark"></i></button>
+          <button class="delete-btn">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
         </li>
       </ul>
-      <div class="icons">
+
+      <!-- Clear all tasks -->
+      <div class="icons" id="clear-list">
         <i
           style="color: white; font-size: larger; font-weight: 900"
           class="fa-solid fa-trash"
         ></i>
       </div>
     </div>
+
     <script src="todo.js"></script>
   </body>
 </html>
