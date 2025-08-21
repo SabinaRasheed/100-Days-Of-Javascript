@@ -50,11 +50,14 @@ saveBtn.addEventListener("click", () => {
 
     taskInput.value = "";
     addBar.style.display = "none";
-  } else {
+  } else if (taskInput.value.trim() === "") {
     let errMsg = document.createElement("p");
     errMsg.classList.add("error-message");
     errMsg.innerHTML = "Please enter a task before saving!";
     addBar.insertAdjacentElement("afterend", errMsg);
+    setTimeout(() => {
+      errMsg.remove();
+    }, 2000);
   }
 });
 
