@@ -71,11 +71,14 @@ todoList.addEventListener("click", (e) => {
     e.target.classList.contains("delete-btn") ||
     e.target.parentElement.classList.contains("delete-btn")
   ) {
-    let todoItem = e.target.closest(".todo-item"); 
+    let todoItem = e.target.closest(".todo-item");
     todoItem.remove();
   }
 });
 
 clearAllBtn.addEventListener("click", () => {
   console.log("Clear All Button Clicked");
+  if (confirm("Are you sure you want to clear all tasks?")) {
+    todoList.innerHTML = "";
+  }
 });
