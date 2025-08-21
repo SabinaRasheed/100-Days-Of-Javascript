@@ -67,12 +67,12 @@ todoList.addEventListener("click", (e) => {
     }
   }
 
-  let deleteBtn = e.target.closest(".delete-btn");
-  if (deleteBtn) {
-    console.log("Task Delete Button Clicked");
-    let todoItem = deleteBtn.closest(".todo-item"); 
+  if (
+    e.target.classList.contains("delete-btn") ||
+    e.target.parentElement.classList.contains("delete-btn")
+  ) {
+    let todoItem = e.target.closest(".todo-item"); 
     todoItem.remove();
-    console.log("Task Deleted");
   }
 });
 
