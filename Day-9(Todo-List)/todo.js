@@ -90,3 +90,27 @@ clearAllBtn.addEventListener("click", () => {
     todoList.innerHTML = "";
   }
 });
+
+const tabs = document.querySelectorAll(".tab");
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    tabs.forEach((t) => t.classList.remove("active"));
+    tab.classList.add("active");
+    let filter = tab.innerText.toLowerCase();
+    console.log("Filter:", filter);
+    let todoItems = document.querySelectorAll(".todo-item");
+
+    todoItems.forEach((item) => {
+      let completed = item.querySelector(".check-task").checked;
+
+      if (filter === "completed") {
+        item.style.display = completed ? "flex" : "none";
+      } else if (filter === "active") {
+        item.style.display = completed ? "none" : "flex";
+      } else if (filter === "all todos") {
+        item.style.display = "flex";
+      }
+    });
+  });
+});
