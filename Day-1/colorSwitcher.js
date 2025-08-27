@@ -1,3 +1,4 @@
+console.log("Color Switcher JS Loaded")
 const buttons=document.querySelectorAll('.button');
 const body=document.querySelector('body');
 
